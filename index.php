@@ -16,7 +16,7 @@
 				echo "<input type='checkbox' name='f[]' value=".$filename."><font color='blue'>".$filename."</font><br>";
 			}
 		?>
-	<p><input type="submit" value="Отправить данные"></p>
+	<p><input type="submit" value="Удалить"></p>
 	</form>
  </body>
 </html>
