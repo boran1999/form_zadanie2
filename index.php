@@ -7,12 +7,14 @@
  </head>
  <body bgcolor="lightblue">
 	<?php
-		$filelist = glob("*.txt");
+		$filelist = glob("logs/*");
 		$i=0;
 	?>
 	<form action="form2.php" method="POST">
 		<?php
 			foreach ($filelist as $filename){
+				$i++;
+				$filename=substr($filename,5);
 				echo "<input type='checkbox' name='f[]' value=".$filename."><font color='blue'>".$filename."</font><br>";
 			}
 		?>
